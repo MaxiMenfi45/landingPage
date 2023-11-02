@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    position: relative;
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 20px 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(238, 238, 238);
+}
+.bold{
+    font-weight: 700;
+
+}
+
+header .logo{
+    cursor: pointer;
+}
+
+header .logo img{
+    height: 70px;
+    width: auto;
+}
+#nav-bar ul{
+    display: flex;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+#nav-bar ul li{
+
+
+    list-style: none;
+    padding: 20px;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+    height: auto;
+    text-decoration: none;
+    padding: 0 0.2rem;
+    margin: 0 25px;
+
+}
+
+button{
+    background-color: orange;
+}
+
+#nothing{
+    display: flex;
+    height: 70px;
+    width: 100%;
+}
+
+#email{
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+
+#email  div{
+    height: 50px;
+    width: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+#email div h1{
+    font-size: 1.4rem;
+}
+
+#email div label input{
+    max-width: 200px;
+}
+
+#body-page{
+    width: 100%;
+    height: auto;
+}
+
+
+#desc{
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+#desc div{
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 0.1rem;
+    justify-content: center;
+
+}
+#desc  div .text{
+    width: 90%;
+    height: auto;
+    display: inline-block;
+    height: 100px;
+}
+
+#desc .icon{
+
+    height: auto;
+    width: 10%;
+    height: 100px;
+    text-align: center;
+    font-size: 80px;
+    margin-right: 2.5rem;
+    color: red;
+}
+
+.title{
+    font-size: 1.2em;
+}
+
+#desc .img{
+    font-size: 0.5em;
+}
+
+#video-container{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    text-align: center;
+
+
+}
+
+#video-container #video{
+    display: flex;
+    width: 40%;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#video-container #video iframe{
+
+    height:350px;
+    width: 500px;
+}
+
+#pricing{
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
+    height: 400px;
+    margin: 40px auto;
+
+}
+.price{
+    font-size: 1.5rem;
+}
+
+#pricing #pricing-child{
+    display: flex;
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#pricing #pricing-child div{
+    text-align: center;
+    margin: auto;
+    padding: 15px auto;
+    max-width: 310px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto 15px;
+    flex: 1;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.guitar-name{
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+#pricing-child div p:not(.title,.bold.guitar-name){
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#pricing #pricing-child div button{
+    width: 100px;
+    min-width: 90px;
+    max-width: 130px;
+    height: 60px;
+    min-height: 40px;
+    max-height: 70px;
+    margin-top: 5px;
+}
+
+
+#footer{
+    height: 100px;
+    width: 100%;
+    min-width: 450px;
+}
+
+#footer div{
+    display: flex;
+    width: 50%;
+    height: 100px;
+    border-bottom: none;
+    margin: 0 auto;
+    justify-content: flex-end;
+    background-color: grey;
+}
+
+#footer div nav ul{
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: space-around;
+    align-items:flex-end;
+    margin-top: 10px;
+
+}
+
+#footer div nav ul li{
+    list-style: none;
+    padding: 5px .0.8rem;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+    
+
+
+}
+
+@media (min-width:300px) and (max-width:768px) {
+    
+
+    header .logo img{
+        width: 50px;
+        margin-left: -20px;
+    }
+
+    #nav-bar ul li a{
+        font-size: 1rem;
+    }
+
+    #desc div {
+        margin-bottom: 2rem;
+        height: 250px;
+        width: auto;
+        
+    }
+
+    #desc div p:not(.text,.title,.bold){
+        border-bottom: 1px solid black;
+    }
+    #icon{
+        position: absolute;
+        left: 0;
+        left:130px;
+        top: 0;
+        top:270px;
+    }
+    #icon1{
+        position: absolute;
+        left: 0;
+        left:130px;
+        top: 0;
+        top:570px;
+    }
+    #icon2{
+        position: absolute;
+        left: 0;
+        left:130px;
+        top: 0;
+        top:870px;
+    }
+    #video-container{
+        margin-bottom: 300px;
+        margin-top: -20px;
+    }
+ 
+
+    #pricing #pricing-child {
+        flex-direction: column;
+        width: 300px;
+        margin-bottom: 150px;
+        flex: 1;
+        margin-top: 350px;
+        margin-top: 30px;
+        margin-bottom: 300px;
+    }
+
+    #pricing #pricing-child div{
+        margin-bottom: 10px;
+    }
+    #footer{
+        margin-top: 300px;
+    }
+    
+}
+
+@media (min-width:100px) and (max-width:300px) {
+    
+    #footer{
+        margin-top: 300px;
+    }
+}
+
+
