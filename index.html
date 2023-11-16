@@ -3,107 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title> 
+    <title>landingPage</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/11fa2fc183.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="icon/genetic-data-svgrepo-com.svg" alt="">
-        </div>
-
+   <section>
+    <header id="header">
         <nav id="nav-bar">
+         <div>
+             <img  id="header-img" src="https://previews.123rf.com/images/putracetol/putracetol1706/putracetol170603672/80767795-icono-del-laboratorio-de-ciencias-elemento-de-dise%C3%B1o-del-logotipo.jpg" alt="">
+         </div>
+        
             <ul>
-                <li><a href="#desc">Features</a></li>
-                <li><a href="#how-it-work">How it work</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-            
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-work">How It Works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
             </ul>
         </nav>
-
+        
+        </div>
     </header>
 
-    <main>
-        <div id="nothing"></div>
+   </section>   
 
-        <section id="email">
-            <div>
-                <div><h1 class="bold">Guitars, I love guitars!</h1></div>
-                <div><label for="input-email">Enter your e-mail  for information.
-                    <br>
-                    <input type="email" id="input-email" placeholder="Enter your email here..." required >
-                    </label>
-                </div>
-                <div><button>GET STARTED</button></div>
-            </div>
-        </section>
-        <div id="body-page">
+   <div id="nothing"></div>
 
-            <section id="desc">
-                <div>
-                    <div class="icon" id="icon"><i class="fa-solid fa-fire img "></i></div>
-                    <div class="text ">
-                        <p class="title bold">Premiun Materials</p>
-                        <p>The guitars are of the best quality possible.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="icon" id="icon1"><i class="fa-solid fa-truck img"></i></div>
-                    <div class="text">
-                        <p class="title bold">Fast Shipping</p>
-                        <p>We make sure the guitars are shipped to you as soon as we have them! We also offer refunds if you are not satisfied!</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="icon" id="icon2"><i class="fa-solid fa-battery-full img"></i></div>
-                    <div class="text">
-                        <p class="title bold">Quality Assurance</p>
-                        <p>For every purchase you make, we make sure there are no faults and verify all functionalities.</p>
-                    </div>
-                </div>
-
-            </section>
-
-            <section id="video-container">
-
-                <div id="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5yIbZVOv438?si=r0_Q_nMzU90Vo5fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    
-                </div>
-            </section>
-
-            <section id="pricing">
-                    <div id="pricing-child">
-                        <div>
-                            <p class="title bold guitar-name">Ibanez</p>
-                            <p class="price bold">$300</p>
-                            <p>Versatile guitars loved by musicians across diverse music genres.</p>
-                            <button>Select</button>
-                        </div>
-                        <div>
-                            <p class="title bold guitar-name">Gibson</p>
-                            <p class="price bold ">$600</p>
-                            <p>Iconic, premium guitars with a rich history in music</p>
-                            <br>
-                            <button>Select</button>
-                        </div>
-                        <div>
-                            <p class="title bold guitar-name">Fender</p>
-                            <p class="price bold">$900</p>
-                            <p>Legendary guitars known for their timeless, classic design and sound.</p>
-                            <br>
-                            <button>Select</button>
-                        </div>
-                    </div>
-            </section>
-
+   <section id="features">
         
+        <header>Guitars, I love guitars!</header>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <label for="email">
+                <input type="email" id="email" name="email" placeholder="Input your email here...">
+            </label>
+            <div>
+                <label for="submit">
+                    <input type="submit" id="submit" name="submit" value="GET STARTED">
+                </label>
+            </div>
+        </form>
+            
 
+   </section>
+
+   <section id="how-it-work">
+        <div class="work-container">
+
+                <div><i class="fa-solid fa-fire img-fire icon"></i></div>
+                <div>
+                    <header class="head-text text1">Premium Materials</header>
+                    <p class="premiun-materials">Our Guitars use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>     
+                <div><i class="fa-solid fa-truck img-truck icon"></i></div>
+                <div>
+                    <header class="head-text text2">Fast Shipping</header>
+                    <p class="fat-shiping">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
+                <div><i class="fa-solid fa-battery-full img-battery icon"></i></div>
+                <div>
+                    <header class="head-text text3">Quality Assurance</header>
+                    <p class="quality">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>
         </div>
 
-    </main>
- 
+   </section>
+   <div id="nothing"></div>
+   <section id="video-informational">
+    <iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/H55KgeOaanY?si=uDRl2pKFKPVDmGx2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </section>
+   <section id="pricing">
+
+            <div>
+                <header class="title-guitar">Ibanez</header>
+                <p class="price bold">$400</p>
+                <p>Versatile</p>
+                <p>Distinctive</p>
+                <p>Iconic</p>
+                <p>Vibrant</p>
+                <button>Select</button>
+            </div>
+            <div>
+                <header class="title-guitar">Gibson</header>
+                <p class="price bold">$600</p>
+                <p>Powerful</p>
+                <p>Classic</p>
+                <p>Solid</p>
+                <p>Sumptuous</p>
+                <button>Select</button>
+            </div>
+            <div>
+                <header class="title-guitar">Fender</header>
+                <p class="price bold">$900</p>
+                <p>Fast</p>
+                <p>Innovative</p>
+                <p>Affordable</p>
+                <p>Versatile</p>
+                <button>Select</button>
+            </div>
+
+   </section>
+
+   <footer>
+    <div>
+        <span>Privacy</span>
+        <span>Terms<span>
+        <span>Contact</span>
+
+    </div>
+    <div>
+        <p>Copyright 2023</p>
+    </div>
+
+   </footer>
 
 </body>
 </html>
